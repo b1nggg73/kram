@@ -1,5 +1,13 @@
+body {
+  background-color: #04002f;
+}
+
 .wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+.container {
+  max-width: 1138px;
+  margin: 0 auto;
 }
