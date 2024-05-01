@@ -1,5 +1,6 @@
 body {
-  background-color: #04002f;
+  background-image: url(./images/bg/bg.png);
+  background-repeat: repeat;
 }
 
 .wrapper {

@@ -1,0 +1,31 @@
+.post {
+}
+.post-img {
+  position: relative;
+  border-radius: 7px;
+}
+
+.post-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(360deg, rgba(8, 4, 53, 0.81) 6.89%, rgba(8, 4, 53, 0) 100%);
+  transition: all 0.3s ease;
+}
+.title-post {
+  margin-top: 23px;
+  width: 240px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144%;
+}
+.discription-post {
+  margin-top: 30px;
+  width: 320px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+}

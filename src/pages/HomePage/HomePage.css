@@ -1,3 +1,9 @@
 .home {
   flex-grow: 1;
 }
+.home-content {
+  color: #fff;
+  display: flex;
+  gap: 19px;
+  justify-content: space-between;
+}
