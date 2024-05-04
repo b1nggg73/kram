@@ -1,0 +1,19 @@
+.post-info {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 182%;
+  color: #000;
+}
+.post-info-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 99%;
+  color: #000;
+  margin-bottom: 22px;
+}
+.post-info-img img {
+  height: 407px;
+  width: 755px;
+  margin-bottom: 32px;
+}

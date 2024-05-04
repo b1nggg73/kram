@@ -19,19 +19,19 @@ const Footer = () => {
             <h3>Связаться с нами: </h3>
             <div className="social-network">
               <div className="social-network__telegram">
-                <Link className="social-network__telegram-link">
+                <Link to="https://t.me/przedviralem" className="social-network__telegram-link">
                   <div className="logo-telegram">
                     <img src={telegramLogo} alt="" />
                   </div>
-                  <div className="communication-telegram">@qwerty_0101010</div>
+                  <div className="communication-telegram">@przedviralem</div>
                 </Link>
               </div>
               <div className="social-network__gmail">
-                <Link className="social-network__gmail-link">
+                <Link to="mailto:przedviralem@gmail.com" className="social-network__gmail-link">
                   <div className="logo-gmail">
                     <img src={gmailLogo} alt="" />
                   </div>
-                  <div className="communication-gmail">demolutionclub@gmail.com</div>
+                  <div className="communication-gmail">przedviralem@gmail.com</div>
                 </Link>
               </div>
             </div>

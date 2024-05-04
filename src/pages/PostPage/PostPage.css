@@ -1,0 +1,6 @@
+.post-content {
+  color: #fff;
+  display: flex;
+  gap: 19px;
+  justify-content: space-between;
+}

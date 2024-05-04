@@ -1,15 +1,20 @@
 import React from 'react';
 import './Post.css';
-import postImg from '../../images/Post/post-img.png';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-const Post = () => {
+const Post = ({ id, postImg, postTitle, postDescription }) => {
+  const navigate = useNavigate();
   return (
-    <div className="post">
+    <div
+      onClick={() => {
+        navigate(`post/${id}`);
+      }}
+      className="post">
       <div className="post-img">
         <img src={postImg} alt="" />
       </div>
-      <h3 className="title-post">Название блога</h3>
-      <h4 className="discription-post">Описание блога</h4>
+      <h3 className="title-post">{postTitle}</h3>
+      <h4 className="discription-post">{postDescription}</h4>
     </div>
   );
 };
