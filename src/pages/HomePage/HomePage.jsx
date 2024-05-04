@@ -2,8 +2,7 @@ import React from 'react';
 import './HomePage.css';
 import DisplayPosts from '../../components/DisplayPosts/DisplayPosts';
 import Category from '../../components/Category/Category';
-import Tags from '../../components/Tags/Tags';
-import PopularNews from '../../components/PopularNews/PopularNews';
+import PopularPost from '../../components/PopularPost/PopularPost';
 
 const HomePage = () => {
   return (
@@ -13,8 +12,7 @@ const HomePage = () => {
           <DisplayPosts />
           <nav className="left-navbar">
             <Category />
-            <Tags />
-            <PopularNews />
+            <PopularPost />
           </nav>
         </main>
       </div>

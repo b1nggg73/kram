@@ -1,0 +1,23 @@
+.category {
+  width: 367px;
+  height: 394px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 31px;
+}
+.h3-category {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 99%;
+  color: #000;
+  margin-bottom: 18px;
+}
+.ul-category {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 232%;
+  color: #000;
+  opacity: 0.4;
+}

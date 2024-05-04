@@ -6,7 +6,7 @@ import HomePage from '../../pages/HomePage/HomePage';
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <div className="container">
         <div className="header-logo">
           <Link to="/">
@@ -14,7 +14,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -1,0 +1,26 @@
+.mini-popular-post {
+  display: flex;
+  gap: 16px;
+  margin-top: 33px;
+}
+
+.mini-popular-post-img {
+  height: 69px;
+  width: 125px;
+  border-radius: 7px;
+}
+.mini-popular-post-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 99%;
+  color: #000;
+}
+.mini-popular-post-discription {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 123%;
+  color: #000;
+  opacity: 0.4;
+}
