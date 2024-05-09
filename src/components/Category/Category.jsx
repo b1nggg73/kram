@@ -1,19 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Category.css';
+import { Link } from 'react-router-dom';
 
-const Category = () => {
+const Category = ({ activeCategory, setActiveCategory, pagination, currentPage }) => {
+  const categorys = ['Все', 'Заработок на сайтах', 'Заработок на ютубе', 'Заработок на тиктоке'];
+
+  function handleCategory(index) {
+    setActiveCategory(index);
+    pagination(1);
+  }
+
   return (
     <div className="category">
       <h3 className="h3-category">Категории</h3>
       <ul className="ul-category">
-        <li>Category 1</li>
-        <li>Category 2</li>
-        <li>Category 3</li>
-        <li>Category 4</li>
-        <li>Category 5</li>
-        <li>Category 6</li>
-        <li>Category 7</li>
-        <li>Category 8</li>
+        {categorys.map((category, index) =>
+          index === activeCategory ? (
+            <li
+              onClick={() => {
+                handleCategory(index);
+              }}
+              className="li-category li-category__active"
+              key={index}>
+              {category}
+            </li>
+          ) : (
+            <li className="li-category" onClick={() => handleCategory(index)} key={index}>
+              {category}
+            </li>
+          ),
+        )}
       </ul>
     </div>
   );

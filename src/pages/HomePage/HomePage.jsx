@@ -12,7 +12,8 @@ const HomePage = () => {
 
   const lastIndexPost = currentPage * currentPerPage;
   const firstIndexPost = lastIndexPost - currentPerPage;
-  const postsOnPage = posts.slice(firstIndexPost, lastIndexPost);
+  const [activeCategory, setActiveCategory] = useState(0);
+  const postsOnPageAll = posts.slice(firstIndexPost, lastIndexPost);
 
   const pagination = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -22,9 +23,13 @@ const HomePage = () => {
       <div className="container">
         <main className="home-content">
           <div className="home-content-posts">
-            <DisplayPosts postsOnPage={postsOnPage} />
+            <DisplayPosts postsOnPage={postsOnPageAll} activeCategory={activeCategory} />
             <Pagintaion
-              totalPosts={posts.length}
+              totalPosts={
+                activeCategory === 0
+                  ? posts.length
+                  : posts.filter((post) => post.category === activeCategory).length
+              }
               currentPerPage={currentPerPage}
               pagination={pagination}
               currentPage={currentPage}
@@ -32,7 +37,12 @@ const HomePage = () => {
           </div>
 
           <nav className="left-navbar">
-            <Category />
+            <Category
+              activeCategory={activeCategory}
+              setActiveCategory={setActiveCategory}
+              pagination={pagination}
+              currentPage={currentPage}
+            />
           </nav>
         </main>
       </div>

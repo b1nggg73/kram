@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Category from '../../components/Category/Category';
-import PopularPost from '../../components/PopularPost/PopularPost';
 import './PostPage.css';
 import PostContent from '../../components/PostContent/PostContent';
 import { useLocation } from 'react-router-dom';
@@ -20,9 +19,6 @@ const PostPage = () => {
             postInfoTitle={posts[postId - 1].title}
             postInfoDescription={posts[postId - 1].description}
           />
-          <nav className="left-navbar">
-            <Category />
-          </nav>
         </main>
       </div>
     </div>

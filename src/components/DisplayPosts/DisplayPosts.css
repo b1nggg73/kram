@@ -5,3 +5,9 @@
   grid-column-gap: 30px;
   grid-row-gap: 20px;
 }
+.not-found {
+  font-size: 64px;
+  color: black;
+  text-align: center;
+  position: absolute;
+}

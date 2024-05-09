@@ -43,6 +43,8 @@ class PostsClass {
         </p>
       ),
       views: 1,
+      category: 1,
+      id: 0,
     },
     {
       title: 'Название блока 2',
@@ -85,6 +87,9 @@ class PostsClass {
         </p>
       ),
       views: 2,
+      category: 1,
+
+      id: 1,
     },
     {
       title: 'Название блока 3',
@@ -92,6 +97,9 @@ class PostsClass {
 
       description: '123',
       views: 12,
+      category: 1,
+
+      id: 2,
     },
     {
       title: 'Название блока 4',
@@ -134,6 +142,9 @@ class PostsClass {
         </p>
       ),
       views: 3,
+      category: 1,
+
+      id: 3,
     },
     {
       title: 'Название блока 5',
@@ -176,6 +187,9 @@ class PostsClass {
         </p>
       ),
       views: 4,
+      category: 1,
+
+      id: 4,
     },
     {
       title: 'Название блока 6',
@@ -218,6 +232,9 @@ class PostsClass {
         </p>
       ),
       views: 10,
+      category: 1,
+
+      id: 5,
     },
     {
       title: 'Название блока 7',
@@ -259,6 +276,9 @@ class PostsClass {
         </p>
       ),
       views: 1,
+      category: 1,
+
+      id: 6,
     },
     {
       title: 'Название блока 8',
@@ -301,6 +321,9 @@ class PostsClass {
         </p>
       ),
       views: 2,
+      category: 1,
+
+      id: 7,
     },
     {
       title: 'Название блока 9',
@@ -308,7 +331,11 @@ class PostsClass {
 
       description: '123',
       views: 12,
+      category: 1,
+
+      id: 8,
     },
+
     {
       title: 'Название блока 10',
       img: imgPost,
@@ -350,6 +377,9 @@ class PostsClass {
         </p>
       ),
       views: 3,
+      category: 1,
+
+      id: 9,
     },
     {
       title: 'Название блока 11',
@@ -392,6 +422,9 @@ class PostsClass {
         </p>
       ),
       views: 4,
+      category: 1,
+
+      id: 10,
     },
     {
       title: 'Название блока 12',
@@ -434,6 +467,8 @@ class PostsClass {
         </p>
       ),
       views: 10,
+      category: 1,
+      id: 11,
     },
   ];
   constructor() {
