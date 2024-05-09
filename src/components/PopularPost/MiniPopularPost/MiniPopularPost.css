@@ -23,4 +23,9 @@
   line-height: 123%;
   color: #000;
   opacity: 0.4;
+  width: 190px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

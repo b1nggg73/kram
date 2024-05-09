@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './DisplayPosts.css';
 import Post from '../Post/Post';
-import { posts } from '../../utils/posts';
 
-const DisplayPosts = () => {
+const DisplayPosts = ({ postsOnPage }) => {
   return (
     <div className="display-post">
-      {posts.map((post, index) => (
+      {postsOnPage.map((post, index) => (
         <Post
           postTitle={post.title}
           postImg={post.img}
           postDescription={post.description}
+          postViews={post.views}
           key={index}
           id={++index}
         />

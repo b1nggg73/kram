@@ -40,3 +40,14 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.views {
+  display: flex;
+  margin-top: 16px;
+}
+.views-number {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+  color: #000;
+  margin-left: 6px;
+}

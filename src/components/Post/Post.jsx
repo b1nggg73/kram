@@ -1,13 +1,20 @@
 import React from 'react';
 import './Post.css';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import views from '../../../src/images/Post/views.svg';
+import PostsClass from '../../store/PostsClass';
+import { observer } from 'mobx-react-lite';
 
-const Post = ({ id, postImg, postTitle, postDescription }) => {
+const Post = observer(({ id, postImg, postTitle, postDescription, postViews }) => {
   const navigate = useNavigate();
+  const { incrementViews } = PostsClass;
+  function handlePost() {
+    navigate(`post/${id}`);
+  }
   return (
     <div
       onClick={() => {
-        navigate(`post/${id}`);
+        handlePost();
       }}
       className="post">
       <div className="post-img">
@@ -15,8 +22,12 @@ const Post = ({ id, postImg, postTitle, postDescription }) => {
       </div>
       <h3 className="title-post">{postTitle}</h3>
       <h4 className="discription-post">{postDescription}</h4>
+      {/* <div className="views">
+        <img src={views} alt="" />
+        <div className="views-number">{postViews}</div>
+      </div> */}
     </div>
   );
-};
+});
 
 export default Post;

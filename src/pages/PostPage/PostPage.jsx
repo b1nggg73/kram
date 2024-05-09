@@ -4,11 +4,12 @@ import PopularPost from '../../components/PopularPost/PopularPost';
 import './PostPage.css';
 import PostContent from '../../components/PostContent/PostContent';
 import { useLocation } from 'react-router-dom';
-import { posts } from '../../utils/posts';
+import PostsClass from '../../store/PostsClass';
 
 const PostPage = () => {
   const location = useLocation();
   const postId = location.pathname[location.pathname.length - 1];
+  const { posts } = PostsClass;
 
   return (
     <div className="post">
@@ -21,7 +22,6 @@ const PostPage = () => {
           />
           <nav className="left-navbar">
             <Category />
-            <PopularPost />
           </nav>
         </main>
       </div>
