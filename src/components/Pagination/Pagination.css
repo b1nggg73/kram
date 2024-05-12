@@ -9,10 +9,18 @@
   width: 33px;
   height: 40px;
   background: #f9f9f9;
+  color: #5b41f5;
   text-align: center;
   text-decoration: none;
   padding-top: 8px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btns:hover {
+  background: #5b41f5;
+  color: #fff;
+  transition: all 0.3s;
 }
 
 .ul-pagination {
@@ -35,9 +43,20 @@
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.a-pagination:hover {
+  background: #5b41f5;
+  color: #fff;
+  transition: all 0.3s;
 }
 
 .a-pagination-active {
   background: #5b41f5;
   color: #fff;
+}
+
+.a-pagination-active:hover {
+  background: #3f2dab;
 }

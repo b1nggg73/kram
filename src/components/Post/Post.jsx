@@ -10,6 +10,7 @@ const Post = observer(({ id, postImg, postTitle, postDescription, postViews }) =
   const { incrementViews } = PostsClass;
   function handlePost() {
     navigate(`post/${id}`);
+    window.scrollTo({ top: 300 });
   }
   return (
     <div

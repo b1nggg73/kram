@@ -22,6 +22,11 @@
   cursor: pointer;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+  transition: all 0.3s;
+}
+.li-category:hover {
+  opacity: 1;
+  transition: all 0.3s;
 }
 .li-category__active {
   opacity: 1;
